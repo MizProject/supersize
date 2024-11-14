@@ -146,6 +146,34 @@ function rpexec() {
     done
 }
 
+function ui_about() {
+    tell ""
+    tell "========================================================"
+    tell "= ABOUT SUPERSIZER                                     ="
+    tell "========================================================"
+    tell "=                                                      ="
+    tell "=  Supersizer is a super partition expander/shrinker   ="
+    tell "=  So you can put your own super images without        ="
+    tell "=  the worry of not having enough space                ="
+    tell "=                                                      ="
+    tell "=  Created by Mizu to handle issues of flashing super  ="
+    tell "=  Images on recoveries like TWRP                      ="
+    tell "=                                                      ="
+    tell "=  License is GPL-3.0                                  ="
+    tell "=                                                      ="
+    tell "========================================================"
+    tell "= press any key to leave                               ="
+    tell "========================================================"
+    tell ""
+}
+
+function about() {
+    wipe
+    ui_about
+    read -n 1
+    main
+}
+
 function main() {
     while true; do
         wipe
